@@ -1,4 +1,6 @@
 body {
+  display: block;
+  box-sizing: border-box;
   background-color: rgb(33, 33, 33);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,11 +10,11 @@ body {
 
 .header {
   width: 100%;
-  display: inline-block;
+  display: block;
   background-color: black;
   position: fixed;
   top: 0px;
-  border-bottom: 1px solid seashell;
+  /* border-bottom: 1px solid seashell; */
 }
 
 .logo {
@@ -23,11 +25,13 @@ body {
 
 h1 {
   margin: auto;
-  padding: 20px;
+  /* padding: 20px; */
+  padding-top: 30px;
   text-align: center;
 }
 
 .navigation {
+  align-items: center;
   float: right;
   height: 100%;
   margin: 0 auto;
@@ -46,3 +50,30 @@ h1 {
   text-decoration: underline;
   color: white;
 }
+
+/* mission statement  */
+
+.mission-container {
+  background-image: url(/banner-image.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  clear: both;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.text-over {
+  margin: auto;
+  padding: none;
+  background-color: black;
+  opacity: 0.75;
+  width: 100%;
+  text-align: center;
+}
+
+/* Products */
