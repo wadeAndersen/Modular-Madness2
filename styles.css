@@ -9,6 +9,7 @@ body {
 /* header css */
 
 .header {
+  z-index: 10;
   width: 100%;
   display: block;
   background-color: black;
@@ -20,7 +21,6 @@ body {
 .logo {
   height: 100px;
   float: left;
-  padding-left: 10px;
 }
 
 h1 {
@@ -35,6 +35,7 @@ h1 {
   float: right;
   height: 100%;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .navigation a {
@@ -77,3 +78,27 @@ h1 {
 }
 
 /* Products */
+
+h2 {
+  text-align: center;
+}
+
+.product-container {
+  display: inline-flex;
+  max-width: 1000px;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.product img {
+  height: 200px;
+  width: 300px;
+  padding: 10px 10px;
+}
+
+/* about */
+
+/* team */
+
+/* media queries */
